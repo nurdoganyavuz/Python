@@ -1,15 +1,15 @@
 #Kullanıcının girdiği boy ve ağırlık değerlerine göre vücut kitle indeksinin hesaplanması işlemi 
 #Formül : (VKİ = ağırlık/(boy*boy)) 
 
-weight = input("Please enter the value of your weight: ")
-height = input("Please enter the value of your height: ")
+strWeight = input("Please enter the value of your weight: ")
+strHeight = input("Please enter the value of your height: ")
 
 #dönüşümler
-intWeight = float(weight)
-intHeight = float(height)
+weight = float(strWeight)
+height = float(strHeight)
 
 #hesaplama
-calculate = intWeight/(intHeight*intHeight)
+calculate = weight/(height*height)
 
 bmi = str(calculate)
 
